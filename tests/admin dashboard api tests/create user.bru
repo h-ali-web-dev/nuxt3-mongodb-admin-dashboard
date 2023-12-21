@@ -1,0 +1,23 @@
+meta {
+  name: create user
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/api/user
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "username": "testUsername1",
+    "email": "testing@email.com1",
+    "password": "password",
+    "isAdmin": true,
+    "isActive": true,
+    "phone":123456778,
+    "address": "Street name"
+  }
+}
